@@ -1,3 +1,7 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\QuestionController::homepage
+    # execute homepage func in QuestionController
+    # Controllers: SlidesController -> ::mainSlides 
+    # maybe later on I will have different slides, e.g. sketchSlides etc.
+    # mainSlides will be my most recent works
