@@ -1,15 +1,15 @@
 # bifrost
 Homepage that displays own artworks, creator data and fulfills the purpose of a portfolio.
 
-setting up
+    ---setting up---
 
 	follow steps here https://symfony.com/download
 
 		--or --
 
 	on linux
+	
 	--symfony--
-
 		execute -> wget https://get.symfony.com/cli/installer -O - | bash
 		then move the folder to use globally -> sudo mv /home/USERNAME/.symfony/bin/symfony /usr/local/bin/symfony
 
@@ -23,26 +23,25 @@ setting up
 		run -> apt install libnss3-tools
 		rerun -> symfony server:ca:install
 
-		--composer--
-			the composer files are with your first pull
-			so the only thing you need to run inside the bifrost directory
-			is -> composer update 
-			
-			to install the application logger 
-			run -> composer require logger
+	--composer--
+        the composer files are with your first pull
+        so the only thing you need to run inside the bifrost directory
+        is -> composer update 
+        
+        maybe not needed:   
+            to install the application logger 
+            run -> composer require logger
 
-	WARNING: DO NOT PUSH COMPOSER FILES NOR SYMFONY.LOCK
+    now go into the project directory
+    run -> symfony serve
+    or -> symfony -d serve 
 
-		now go into the project directory
-		run -> symfony serve
-		or -> symfony -d serve 
+    you can abandon the first with ctrl + c
+    the second one runs the webserver as a daemon in the background and keeps logs in a log file
+    you can abandon this one through -> symfony server:stop
+    which you can access through -> symfony server:log
 
-		you can abandon the first with ctrl + c
-		the second one runs the webserver as a daemon in the background and keeps logs in a log file
-		you can abandon this one through -> symfony server:stop
-		which you can access through -> symfony server:log
-
-		now check if errors occured during the startup, open the browser and go on localhost:8000
+    now check if errors occured during the startup, open the browser and go on localhost:8000
 
 	
 
