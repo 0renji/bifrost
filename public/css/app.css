@@ -1,0 +1,57 @@
+.page-bar{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    #background: black;
+
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar-brand{
+    #background: lightgray;
+    height: 8vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #999999;
+    word-wrap: break-word;
+}
+
+.navbar-link{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    white-space: nowrap;
+    text-decoration: none;
+    word-wrap: break-word;
+
+    color: #999999;
+}
+
+.navbar-text{
+    font: 2rem "Ubuntu Condensed", sans-serif;
+    text-align: center;
+}
+
+.link{
+    font-size: 1.25rem;
+    padding: 0.5em;
+}
+
+.links{
+    padding-right: 2em;
+}
+
+.spacer{
+    flex-grow: 1;
+    #background: white;
+}
