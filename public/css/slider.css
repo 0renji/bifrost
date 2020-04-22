@@ -1,0 +1,46 @@
+.slider{
+    background: white;
+    height: 100%;
+}
+.slider-content{
+    padding-top: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    bottom: 0;
+}
+.shown-image{
+    object-fit: contain;
+    max-width:100%;
+    max-height:100%;
+}
+
+.slider-btn{
+    top: 50%;
+    height: 6vh;
+    width: 6vh;
+    border-radius: 100%;
+    box-shadow: none;
+    border: solid #dbdbdb 2px;
+    position: fixed;
+    background: white;
+}
+.slider-btn:hover{
+    background: #dbdbdb;
+}
+
+.slider-btn i{
+    font-size: large;
+    color: #999999;
+}
+
+.btnLeft{
+    left: 0;
+    margin-left: 2em;
+}
+
+.btnRight{
+    margin-right: 2em;
+    right: 0;
+}

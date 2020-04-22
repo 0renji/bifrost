@@ -18,8 +18,36 @@ class QuestionController extends AbstractController
 	# can also be called action or ROUTE
 	public function homepage()
 	{
-		return $this->render('question/homepage.html.twig', []);
+		return $this->render('homepage.html.twig', []);
 	}
+
+    /**
+     * @Route("/traditional", name="app_traditional")
+     */
+	public function traditional(){
+        return new Response("todo traditional");
+    }
+
+    /**
+     * @Route("/sketches", name="app_sketches")
+     */
+    public function sketches(){
+        return new Response("todo sketches");
+    }
+
+    /**
+     * @Route("/digital", name="app_digital")
+     */
+    public function digital(){
+        return new Response("todo digital");
+    }
+
+    /**
+     * @Route("/about-me", name="app_about_me")
+     */
+    public function aboutMe(){
+        return new Response("todo about me");
+    }
 
 	# {x} is a wildcard whats written inside doesnt matter
     # what is inside the wildcard will be transmitted to the func
