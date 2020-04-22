@@ -29,6 +29,7 @@
 .slider-btn:hover{
     background: #dbdbdb;
 }
+.slider-btn:focus {outline:0;}
 
 .slider-btn i{
     font-size: large;
